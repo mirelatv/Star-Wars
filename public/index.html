@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link href="https://fonts.googleapis.com/css?family=Spectral+SC" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!-- Compiled and minified CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
   <link rel="stylesheet" href="css/main.css">
@@ -61,7 +61,7 @@
             <label for="search-keyword">search</label>
             <br>
             <input id="search-keyword" type="text" required>
-            <a  id="modal" class=" waves-effect waves-light btn modal-trigger" href="#modal1"> submit </a>
+            <a class="modalButton waves-effect waves-light btn modal-trigger" href="#modal"> submit </a>
 
 
           </div>
@@ -69,6 +69,7 @@
       </div>
       <br>
       <br>
+
     </div>
   </section>
   <section class="secondSection">
@@ -81,20 +82,58 @@
     </div>
   </section>
   <!-- Modal Trigger -->
-  
 
   <!-- Modal Structure -->
-  <div id="modal1" class="modal">
-    <div id="modal-content" class="modal-content">
+  <div id="modal" class="modal">
+    <div id="modal-content">
+      <h3 class="center-align">STAR WARS</h3>
+      <div id="modalCont" class="N/A transparent">
+
+      </div>
+
 
     </div>
-    <div class="modal-footer">
+    <div class="modal-footer N/A transparent">
       <a href="https://mirelatv.github.io/Star-Wars/public/index.html" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
     </div>
   </div>
-  <footer class="row">
-
+  <footer class="page-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">STAR WARS - CODER LAB</h5>
+          <p class="grey-text text-lighten-4">J.Manturano-N.Tello.</p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          
+          <ul class="UlFooter">
+            <li>
+              <a class="grey-text text-lighten-3" href="#!">
+                <i class="small material-icons">insert_chart</i>
+              </a>
+            </li>
+            <li>
+              <a class="grey-text text-lighten-3" href="#!">
+                <i class="small material-icons">adb</i>
+              </a>
+            </li>
+            <li>
+              <a class="grey-text text-lighten-3" href="#!">
+                <i class="small material-icons">add_location</i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        © 2018 Copyright 
+        <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+      </div>
+    </div>
   </footer>
+
 
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <!-- Compiled and minified JavaScript -->

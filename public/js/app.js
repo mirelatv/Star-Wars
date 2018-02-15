@@ -4,20 +4,22 @@ const form = document.getElementById('search-form');
 const searchField = document.getElementById('search-keyword');
 const submitBtn = document.getElementById('modal');
 const responseContainer = document.getElementById('responseContainer');
-const bodyModal = document.getElementById('modal-content')
+const bodyModalCont = document.getElementById('modalCont')
 let searchedFordPeople;
 
 //funcion  para imagenes
 (function images(window, document) {
   const containerImage = document.getElementById('container-image');
+
   let count = 0;
   for (let i = 1; i < 88; i++) {
     const urlImages = `https://starwars-visualguide.com/assets/img/characters/${i}.jpg`;
     console.log(urlImages);
     const anchor = document.createElement('a');
-    anchor.setAttribute('href', "#modal1");
+    anchor.setAttribute('href', "#modal");
+    anchor.className = 'col s12 m4 contImage N/A transparent waves-effect waves-light btn modal-trigger'
     const image = document.createElement('img');
-    image.className = 'imageClass col m4 s12';
+    image.className = 'imageClass ';
     image.setAttribute('src', urlImages);
     anchor.appendChild(image);
     containerImage.appendChild(anchor);
@@ -29,7 +31,7 @@ let searchedFordPeople;
 submitBtn.addEventListener('click', function (e) {
   e.preventDefault();
   searchedFordPeople = searchField.value;
-  
+
   getPeople();
 
 })
@@ -59,8 +61,10 @@ function addPeople() {
     let charName = element.name.toLowerCase();
     let searchLower = searchedFordPeople.toLowerCase();
     
+
+
     //iterando por indice 
-    if (charName.indexOf(searchLower) !== -1) {
+    if (charName.indexOf(searchLower) !== -1 ) {
       console.log(element.name);
       let names = element.name;
       let birthday = element.birth_year;
@@ -85,7 +89,7 @@ function addPeople() {
       name.appendChild(hairColor);
       name.appendChild(skinColor);
       name.appendChild(TheGender);
-      bodyModal.appendChild(name);
+      bodyModalCont.appendChild(name);
     }
 
     //asignando imagenes 
