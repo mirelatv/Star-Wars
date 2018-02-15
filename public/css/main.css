@@ -1,0 +1,18 @@
+body {
+    font-family: 'Spectral SC', serif;
+    background-image: url('../assets/images/wars.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.initial {
+    color: aliceblue;
+}
+
+
+#modal {
+    background: rgb(245, 12, 12);
+    margin-left: 43%;
+}
+
+
